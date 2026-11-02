@@ -71,7 +71,6 @@ class Sketch {
 
   render() {
     this.controls.update();
-    if (this.mesh) this.mesh.rotation.y = this.clock.getElapsedTime() * 0.35;
     this.renderer.setAnimationLoop(() => this.render());
     this.renderer.render(this.scene, this.camera);
   }
